@@ -1,7 +1,7 @@
 
 let w;
 let n;
-let size = 100;
+let size = 10;
 
 function setup() {
   let canvas = createCanvas(200, 200);
