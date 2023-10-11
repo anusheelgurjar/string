@@ -4,8 +4,9 @@ let n;
 let size = 100;
 
 function setup() {
-  let canvas = createCanvas(400,400);
+  let canvas = createCanvas(windowWidth * 0.8, windowHeight * 0.6);
   canvas.parent('canvas-container'); // Specify the parent container by its ID
+  //noLoop();
   w = width / 2 - size;
   n = 10;
 }
@@ -40,27 +41,27 @@ function draw() {
 }
 
 function st(p_) {
-    if (p_ == 0) {
+    if (p_ <= 0) {
       line(0, 0, 0, w);
       line(0, w, w, w);
     } else {
-      for (let i = 0; i <= p_ - 1; i++) {
+      
+      for (let i = 0; i <= p_; i++) {
+        if(p_<=5){
         stroke(10 * i, 40 * i, 40 * i);
+        }else{
+          p_=5;
+          stroke(10 * i, 40 * i, 40 * i); //additional code for color restriction outside canvas
+        }
         line(0, (w * i) / n, (w * (i + 1)) / n, w);
-        line(
-          0,
-          w - (w * (i + 1)) / n,
-          w - (w * i) / n,
-          w
-        );
+        line(0,w - (w * (i + 1)) / n,w - (w * i) / n,w);}
       }
     }
-  }
 
 function circ(p_) {
     let col = n;
     let angle = 90 / (n + 1);
-    if (p_ == 0) {
+    if (p_ <= 0) {
       line(0, 0, w, 0);
       line(0, w, w, 0);
     } else if (p_ >= n / 2) {
@@ -94,4 +95,3 @@ function circ(p_) {
       }
     }
   }
-
