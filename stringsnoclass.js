@@ -1,10 +1,10 @@
 
 let w;
 let n;
-let size = 10;
+let size = 100;
 
 function setup() {
-  let canvas = createCanvas(200, 200);
+  let canvas = createCanvas(800, 800);
   canvas.parent('canvas-container'); // Specify the parent container by its ID
   //noLoop();
   w = width / 2 - size;
