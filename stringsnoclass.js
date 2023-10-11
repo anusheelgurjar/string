@@ -13,7 +13,7 @@ function setup() {
 
 function windowResized() {
  // Resize the canvas when the window size changes
-  resizeCanvas(windowWidth * 0.8, windowHeight * 0.6);
+  resizeCanvas(windowWidth * 0.8, windowHeight * 0.8);
 }
 
 function draw() {
