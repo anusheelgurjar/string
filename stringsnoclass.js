@@ -6,7 +6,6 @@ let size = 100;
 function setup() {
   let canvas = createCanvas(400,400);
   canvas.parent('canvas-container'); // Specify the parent container by its ID
-  noLoop();
   w = width / 2 - size;
   n = 10;
 }
