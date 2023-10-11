@@ -84,7 +84,7 @@ function circ(p_) {
         line(v2, 0, x, y);
         v2 += w / n;
       }
-      for (let j = 90 - angle; j >= angle * (this.n - p_); j -= angle) {
+      for (let j = 90 - angle; j >= angle * (n - p_); j -= angle) {
         //increment diff than processing version
         stroke(1 * col, 3 * col, 3 * col);
         let x = int(w * cos(radians(j)));
