@@ -4,16 +4,11 @@ let n;
 let size = 100;
 
 function setup() {
-  let canvas = createCanvas(windowWidth*0.3, windowWidth*0.3);
+  let canvas = createCanvas(500, 500);
   canvas.parent('canvas-container'); // Specify the parent container by its ID
   //noLoop();
   w = width / 2 - size;
   n = 10;
-}
-
-function windowResized() {
- // Resize the canvas when the window size changes
-  //resizeCanvas(windowWidth * 0.3, windowWidth * 0.3);
 }
 
 function draw() {
