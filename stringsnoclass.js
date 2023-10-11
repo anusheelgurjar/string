@@ -46,7 +46,7 @@ function st(p_) {
       line(0, w, w, w);
     } else {
       
-      for (let i = 0; i <= p_-1; i++) {
+      for (let i = 0; i <= p_ - 1; i++) {
         if(p_<=5){
         stroke(10 * i, 40 * i, 40 * i);
         }else{
