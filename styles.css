@@ -1,7 +1,7 @@
 
 #canvas-container {
-  width: 80%;
-  height: 60vh; /* 60% of the viewport height */
+  width: 50%;
+  height: width; /* 60% of the viewport height */
   background-color: #eee;
   margin: 0 auto;
 }
