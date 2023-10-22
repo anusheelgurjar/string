@@ -9,7 +9,7 @@ function setup() {
   canvasWidth = window.innerWidth; 
   canvasHeight = window.innerHeight;
   createCanvas(canvasWidth, canvasHeight);
-  size= width / 10;
+  size= 100;
   w = width / 2 - size;
   n = 10;
 }
