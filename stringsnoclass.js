@@ -32,11 +32,8 @@ function draw() {
   st(p);
   rotate(PI + HALF_PI);
   circ(p);
-  pop();
-
-  push();
-  translate(width - size, height / 2);
-  rotate(PI);
+  translate(width-size*(width/100), height/1.65 );
+  rotate(PI+ HALF_PI);
   st(p);
   rotate(PI + HALF_PI);
   circ(p);
