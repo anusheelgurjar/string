@@ -1,14 +1,22 @@
 
 let w;
 let n;
-let size = 100;
+let size = 200;
+let canvasWidth;
+let canvasHeight;
 
 function setup() {
-  let canvas = createCanvas(800, 800);
-  canvas.parent('canvas-container'); // Specify the parent container by its ID
-  //noLoop();
+  canvasWidth = window.innerWidth; 
+  canvasHeight = window.innerHeight;
+  createCanvas(canvasWidth, canvasHeight);
   w = width / 2 - size;
   n = 10;
+}
+
+function windowResized() {
+  canvasWidth = window.innerWidth; 
+  canvasHeight = window.innerHeight; 
+  resizeCanvas(canvasWidth, canvasHeight);
 }
 
 function draw() {
