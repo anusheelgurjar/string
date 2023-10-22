@@ -1,7 +1,7 @@
 
 let w;
 let n;
-let size = 200;
+let size = 100;
 let canvasWidth;
 let canvasHeight;
 
