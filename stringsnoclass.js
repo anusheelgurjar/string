@@ -1,7 +1,7 @@
 
 let w;
 let n;
-let size = 100;
+let size;
 let canvasWidth;
 let canvasHeight;
 
@@ -9,7 +9,9 @@ function setup() {
   canvasWidth = window.innerWidth; 
   canvasHeight = window.innerHeight;
   createCanvas(canvasWidth, canvasHeight);
-  w = width / 2 - size;
+  
+  size=width / 10;
+  w = width * 4 / 10;
   n = 10;
 }
 
