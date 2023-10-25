@@ -7,7 +7,7 @@ let canvasHeight;
 
 function setup() {
   canvasWidth = window.innerWidth; 
-  canvasHeight = window.innerHeight;
+  canvasHeight = window.innerWidth;
   createCanvas(canvasWidth, canvasHeight);
   
   size=width / 10;
@@ -17,7 +17,7 @@ function setup() {
 
 function windowResized() {
   canvasWidth = window.innerWidth; 
-  canvasHeight = window.innerHeight; 
+  canvasHeight = window.innerWidth; 
   resizeCanvas(canvasWidth, canvasHeight);
 }
 
