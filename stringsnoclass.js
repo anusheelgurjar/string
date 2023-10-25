@@ -29,14 +29,14 @@ function draw() {
   stroke(0, 116, 255);
 
   push();
-  translate(size, height / 2);
+  translate(size, width / 2);
   st(p);
   rotate(PI + HALF_PI);
   circ(p);
   pop();
 
   push();
-  translate(width - size, height / 2);
+  translate(width - size, width / 2);
   rotate(PI);
   st(p);
   rotate(PI + HALF_PI);
