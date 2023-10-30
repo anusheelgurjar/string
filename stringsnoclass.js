@@ -1,4 +1,3 @@
-
 let w;
 let n;
 let size;
